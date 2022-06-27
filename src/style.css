@@ -1,0 +1,157 @@
+body * {
+    margin: 0;
+    line-height: 2;
+    font-size: 24px;
+    padding: 0;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0;
+    align-items: center;
+    margin: 40px auto;
+    border: 1px solid #028097;
+    border-radius: 20px;
+    background-color: #028097;
+    color: #fff;
+}
+
+.row {
+    margin: 40px;
+    justify-content: space-between;
+}
+
+.row>*,
+.card-body {
+    padding: 0;
+}
+
+.form-control {
+    font-size: 34px;
+    background-color: inherit;
+    border-left: none;
+}
+
+.col-8 {
+    display: flex;
+    justify-content: center;
+}
+
+.col-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    background-color: inherit;
+}
+
+hr {
+    margin: 0 40px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 35%, rgba(20, 76, 96, 1) 100%);
+    height: 3px;
+}
+
+.actualDayCity {
+    background-color: #144c60;
+    padding-left: 40px;
+    padding-right: 135px;
+    box-shadow: inset 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+}
+
+.actualDayCity span {
+    font-size: 30px;
+}
+
+.weatherToday {
+    display: flex;
+}
+
+.card-img {
+    width: 250px;
+}
+
+.actualDegree {
+    letter-spacing: -0.1em;
+    line-height: 1.2;
+    height: 250px;
+    font-size: 200px;
+    vertical-align: middle;
+}
+
+.card-body {
+    width: 100%;
+    text-align: center;
+}
+
+.borderDegree {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.chooseDate {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+}
+
+.chooseDate i {
+    background-color: #144c60;
+    width: 25px;
+    cursor: pointer;
+    box-shadow: inset 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+.cardThird {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px 40px 0;
+}
+
+.col-2 {
+    height: 70px;
+    padding-top: 10px;
+    border-radius: 10px;
+    background-color: #144c60;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+#inputGroup-sizing-default , #formButton{
+    color: #fdd400;
+    background-color: #144c60;
+    border-color: #144c60;
+    border-right: none;
+    box-shadow: inset 2px 2px 3px 1px rgb(0 0 0 / 20%);
+}
+
+#city::placeholder {
+    color: #fff;
+    opacity: 1;
+}
+
+#city:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #fff;
+}
+
+#city::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #fff
+}
+
+#city {
+    border-color: #144c60;
+    box-shadow: inset 0px 0px 8px -1px #fff;
+}
+
+#city:focus {
+    background-color: inherit;
+    color: #fff;
+    box-shadow: inset 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <title>Wheather </title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header">
+            <div class=" col col-8">
+                <form class="input input-group ">
+                    <label for="city" class="input-group-text" id="inputGroup-sizing-default">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </label>
+                    <input type="text" id="city" class="form-control" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default" placeholder="Enter a city" autofocus
+                        autocomplete="off">
+                    <button class="input-group-text" id="formButton" type="submit"><i class="bi bi-search"></i></button>
+                </form>
+            </div>
+            <div class="col col-4">
+                <div class="chooseDate">
+                    <i class="bi bi-caret-left-fill"></i>
+                    <span class="actualDate">May 19</span>
+                    <i class="bi bi-caret-right-fill"></i></div>
+            </div>
+        </div>
+        <hr>
+        <main>
+            <div class="actualDayCity">
+                <div>
+                    <span class="actualDay"> Thuersday,</span>
+                    <span class="actualCity">Kyiv</span>
+                </div>
+                <div>
+                    <span class="actualTime"> 18:00</span>
+                </div>
+            </div>
+            <div class="weatherToday">
+                <div class="card col-4">
+                    <img src="images/Weather/sun_with_clouds-removebg-preview.png" class="card-img" alt="weather image">
+                    <div class="card-body">
+                        <p class="card-text">Sun with clouds</p>
+                    </div>
+                </div>
+                <div class="card col-4">
+                    <div class="actualDegree"> 15&deg;</div>
+                    <div class="card-body">
+                        <p class="card-text">Feels like
+                            <span class="feelTemperature">13&deg;</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-4 cardThird">
+                    <div class="borderDegree">
+                        <div class="minTemp">
+                            13&deg;
+                            <i class="bi bi-caret-down-fill"></i>
+                        </div>
+                        <i class="bi bi-thermometer-half"></i>
+                        <div class="maxTemp">
+                            <i class="bi bi-caret-up-fill"></i>
+                            18&deg;
+                        </div>
+                    </div>
+                    <div class="windBlock">
+                        <p><i class="bi bi-wind"></i>
+                            <span class="windSpeed">2</span>
+                            km/h
+                        </p>
+                    </div>
+                    <div class="humidityBlock">
+                        <i class="bi bi-droplet-half">
+                        </i>72%
+                    </div>
+                </div>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <div class="row justify-content-between">
+                <div class="col-2">
+                    <span class="dayOfWeek">FRI</span>
+                    <span class="dayTemp">20&deg;</span>
+                </div>
+                <div class="col-2">
+                    <span class="dayOfWeek">SAT</span>
+                    <span class="dayTemp">20&deg;</span>
+                </div>
+                <div class="col-2">
+                    <span class="dayOfWeek">SUN</span>
+                    <span class="dayTemp">20&deg;</span>
+                </div>
+                <div class="col-2">
+                    <span class="dayOfWeek">MON</span>
+                    <span class="dayTemp">20&deg;</span>
+                </div>
+                <div class="col-2">
+                    <span class="dayOfWeek">TUE</span>
+                    <span class="dayTemp">20&deg;</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="src/main.js"></script>
+</body>
+
+</html>
