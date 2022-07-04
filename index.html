@@ -20,7 +20,6 @@
                         <i class="bi bi-geo-alt-fill"></i>
                     </button>
                 <form class="input input-group">
-                   
                     <input type="text" id="city" class="form-control" aria-label="Sizing example input"
                         aria-describedby="inputGroup-sizing-default" placeholder="Enter a city" autofocus
                         autocomplete="off" />
@@ -44,19 +43,36 @@
                     <span class="actualDay"> Thuersday,</span>
                     <span class="actualCity">Kyiv</span>
                 </div>
-                <div>
+                <div class="actualTimeBlock">
                     <span class="actualTime"> 18:00</span>
                 </div>
             </div>
             <div class="weatherToday">
                 <div class="card col-4">
-                    <img src="images/Weather/sun_with_clouds-removebg-preview.png" class="card-img" alt="weather image" />
+                    <img 
+                        src="images/Weather/sun_with_clouds-removebg-preview.png" 
+                        class="card-img" 
+                        id="icon"
+                        alt="weather image" />
                     <div class="card-body">
                         <p class="card-text description">Sun with clouds</p>
                     </div>
                 </div>
                 <div class="card col-4">
-                    <div class="actualDegree">15&deg;</div>
+                    <div class="actualTempCF"> 
+                        <div class="actualDegree">
+                            15
+                        </div>
+                    <div class="tempCF">
+                        <span class="tempC active">
+                            &deg;C
+                        </span>
+                        <hr>
+                        <span class="tempF">
+                            &deg;F
+                        </span>
+                    </div>
+                </div>
                     <div class="card-body">
                         <p class="card-text">
                             Feels like
@@ -83,23 +99,23 @@
         <footer>
             <div class="row justify-content-between">
                 <div class="col-2">
-                    <span class="dayOfWeek">FRI</span>
+                    <span class="dayOfWeek">Fri</span>
                     <span class="dayTemp">20&deg;</span>
                 </div>
                 <div class="col-2">
-                    <span class="dayOfWeek">SAT</span>
+                    <span class="dayOfWeek">Sat</span>
                     <span class="dayTemp">20&deg;</span>
                 </div>
                 <div class="col-2">
-                    <span class="dayOfWeek">SUN</span>
+                    <span class="dayOfWeek">Sun</span>
                     <span class="dayTemp">20&deg;</span>
                 </div>
                 <div class="col-2">
-                    <span class="dayOfWeek">MON</span>
+                    <span class="dayOfWeek">Mon</span>
                     <span class="dayTemp">20&deg;</span>
                 </div>
                 <div class="col-2">
-                    <span class="dayOfWeek">TUE</span>
+                    <span class="dayOfWeek">Tue</span>
                     <span class="dayTemp">20&deg;</span>
                 </div>
             </div>

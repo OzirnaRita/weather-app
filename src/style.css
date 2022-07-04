@@ -6,7 +6,7 @@ body * {
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 800px;
     padding: 0;
     align-items: center;
     margin: 40px auto 0;
@@ -17,7 +17,7 @@ body * {
 }
 
 .row {
-    margin: 40px;
+    margin: 30px;
     justify-content: space-between;
 }
 
@@ -27,7 +27,7 @@ body * {
 }
 
 .form-control {
-    font-size: 34px;
+    font-size: 24px;
     background-color: inherit;
     border-left: none;
 }
@@ -46,7 +46,6 @@ body * {
 }
 
 hr {
-    margin: 0 40px;
     background: radial-gradient(circle,
             rgba(255, 255, 255, 1) 0%,
             rgba(255, 255, 255, 1) 35%,
@@ -54,17 +53,23 @@ hr {
     height: 3px;
 }
 
+.actualCity{
+    text-transform: capitalize;
+}
 .actualDayCity {
     background-color: #144c60;
-    padding-left: 40px;
-    padding-right: 135px;
+    padding: 0 40px;
     box-shadow: inset 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
     display: flex;
     justify-content: space-between;
 }
 
 .actualDayCity span {
-    font-size: 30px;
+    font-size: 28px;
+}
+.actualTimeBlock{
+    width: 190px;
+    text-align: center;
 }
 
 .weatherToday {
@@ -72,14 +77,14 @@ hr {
 }
 
 .card-img {
-    width: 250px;
+    width: 190px;
 }
 
 .actualDegree {
     letter-spacing: -0.1em;
     line-height: 1.2;
-    height: 250px;
-    font-size: 200px;
+    height: 190px;
+    font-size: 150px;
     vertical-align: middle;
 }
 
@@ -106,12 +111,11 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 40px 40px 0;
+    padding: 40px;
 }
 
 .col-2 {
-    height: 70px;
-    padding-top: 10px;
+    height: 50px;
     border-radius: 10px;
     background-color: #144c60;
     text-align: center;
@@ -153,10 +157,34 @@ hr {
     color: #fff;
     box-shadow: inset 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
 }
-.linkBlock{
+
+.linkBlock {
     margin:  auto;
-    max-width: 1000px;
+    max-width: 800px;
+    font-size: 20px;
 }
+
+.linkBlock * {
+    font-size: 20px;
+}
+
 .linkBlock a {
     text-decoration-line: none;
+}
+
+.actualTempCF{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.tempCF{
+    padding-top: 10px;
+}
+.tempC:hover,
+.tempF:hover {
+background-color:#1f627a;
+}
+.active{
+    color:#fdd400;
 }
