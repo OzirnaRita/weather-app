@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,13 +15,21 @@
 <body>
     <div class="container">
         <div class="row header">
-            <div class="col col-8"> <button title="Current location" for="city" class="input-group-text" id="inputGroup-sizing-default">
-                        <i class="bi bi-geo-alt-fill"></i>
-                    </button>
+            <div class="col col-8"> 
+                <button title="Current location" for="city" class="input-group-text" id="inputGroup-sizing-default">
+                    <i class="bi bi-geo-alt-fill"></i>
+                </button>
                 <form class="input input-group">
-                    <input type="text" id="city" class="form-control" aria-label="Sizing example input"
-                        aria-describedby="inputGroup-sizing-default" placeholder="Enter a city" autofocus
-                        autocomplete="off" />
+                    <input 
+                        type="text" 
+                        id="city" 
+                        class="form-control" 
+                        aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default" 
+                        placeholder="Enter a city" 
+                        autofocus
+                        autocomplete="off"
+                    />
                     <button title="Search" class="input-group-text" id="formButton" type="submit">
                         <i class="bi bi-search"></i>
                     </button>
@@ -31,20 +38,29 @@
             <div class="col col-4">
                 <div class="chooseDate">
                     <i class="bi bi-caret-left-fill"></i>
-                    <span class="actualDate">May 19</span>
+                    <span class="actualDate">
+                        May 19
+                    </span>
                     <i class="bi bi-caret-right-fill"></i>
                 </div>
             </div>
         </div>
         <hr />
+
         <main>
             <div class="actualDayCity">
                 <div>
-                    <span class="actualDay"> Thuersday,</span>
-                    <span class="actualCity">Kyiv</span>
+                    <span class="actualDay"> 
+                        Thuersday,
+                    </span>
+                    <span class="actualCity">
+                        Kyiv
+                    </span>
                 </div>
                 <div class="actualTimeBlock">
-                    <span class="actualTime"> 18:00</span>
+                    <span class="actualTime"> 
+                        18:00
+                    </span>
                 </div>
             </div>
             <div class="weatherToday">
@@ -53,9 +69,12 @@
                         src="http://openweathermap.org/img/wn/10d@2x.png"
                         class="card-img" 
                         id="icon"
-                        alt="weather image" />
+                        alt="weather image" 
+                    />
                     <div class="card-body">
-                        <p class="card-text description">Sun with clouds</p>
+                        <p class="card-text description">
+                            Sun with clouds
+                        </p>
                     </div>
                 </div>
                 <div class="card col-4">
@@ -63,14 +82,18 @@
                         <div class="actualDegree">
                             15
                         </div>
-                    <div class="tempCF">
-                            &deg;C     
+                        <div class="tempCF">
+                            &deg;C
+                        </div>
                     </div>
-                </div>
                     <div class="card-body">
                         <p class="card-text">
-                            Feels like
-                            <span class="feelTemperature">13&deg;</span>
+                            <span>
+                                Feels like
+                            </span>
+                            <span class="feelTemperature">
+                                13&deg;
+                            </span>
                         </p>
                     </div>
                 </div>
@@ -78,34 +101,28 @@
                     <div class="windBlock">
                         <p>
                             <i class="bi bi-wind"></i>
-                            <span class="windSpeed">2</span>
-                            km/h
+                            <span class="windSpeed">
+                                2 km/h
+                            </span>
                         </p>
                     </div>
                     <div class="humidityBlock">
                         <i class="bi bi-droplet-half"></i>
-                        <span class="humidity">72</span>%
+                        <span class="humidity">
+                            72%
+                        </span>
                     </div>
                 </div>
             </div>
         </main>
         <hr />
+
         <footer>
-            <div class="row justify-content-between">
-                <div class="col-2">
-                    <div class="dayOfWeek">Fri</div>
-                    <img 
-                        src="http://openweathermap.org/img/wn/10d@2x.png" 
-                        alt="smallWeatherIcon"
-                        class="smallWeatherIcon">
-                    <div class="weatherForecastTemperature">
-                        <span class="weatherForecastTemperatureMax">20&deg;</span>
-                        <span class="weatherForecastTemperatureMin">20&deg;</span>
-                    </div>
-                </div>
-            </div>
+            <div id="forecastBlock"></div>
         </footer>
+
     </div>
+    
     <div class="linkBlock">
         <a href="https://github.com/OzirnaRita/weather-app" target="_blank">
             Open-source code 
