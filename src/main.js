@@ -8,30 +8,9 @@ let actualDegree = document.querySelector(".actualDegree");
 let windSpeed = document.querySelector(".windSpeed");
 let humidity = document.querySelector(".humidity");
 let description = document.querySelector(".description");
-let days = [
-    "Sunday",
-    "Monday",
-    "Tuesday",
-    "Wednesday",
-    "Thursday",
-    "Friday",
-    "Saturday"
-];
+let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 let day = days[date.getDay()];
-let monthes = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "Octobre",
-    "November",
-    "Decembre"
-];
+let monthes = ["January", "February", "March", "April", "May", "June", "July", "August", "September","Octobre", "November", "Decembre"];
 let month = monthes[date.getMonth()];
 let actualDate = document.querySelector(".actualDate");
 let actualDay = document.querySelector(".actualDay");
@@ -40,8 +19,6 @@ let minutes = date.getMinutes();
 let hours = date.getHours();
 let form = document.querySelector("form");
 let icon = document.querySelector('#icon');
-let tempC = document.querySelector('.tempC');
-let tempF = document.querySelector('.tempF');
 
 if (minutes < 10) {
     minutes = "0" + minutes;
@@ -69,8 +46,8 @@ function showGeo() {
 function showPosition(position) {
     let lat,lon;
     if (position) {
-         lat = position.coords.latitude;
-         lon = position.coords.longitude;
+        lat = position.coords.latitude;
+        lon = position.coords.longitude;
     }else{
             lat = 50.4333;
             lon = 30.5167;
@@ -95,24 +72,8 @@ function currentTemp(response) {
     icon.setAttribute('src', `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
     icon.setAttribute('alt', `http://openweathermap.org/img/wn/${response.data.weather[0].desciption}`)
 }
-function displayFahrenheit(){
-    let tempFahrenheit = Math.round((temp *9)/5 + 32);
-    let feelsTempFahrenheit = Math.round((feels * 9) / 5 + 32);
-    actualDegree.innerHTML = `${tempFahrenheit}`;
-    feelTemperature.innerHTML = `${feelsTempFahrenheit}`;
-    tempC.classList.remove('active');
-    tempF.classList.add('active');
-}
-function displayCelsium() {
-    actualDegree.innerHTML = `${temp}`;
-    feelTemperature.innerHTML = `${feels}`;
-    tempF.classList.remove('active');
-    tempC.classList.add('active');
-}
 
 loc.addEventListener("click", showGeo);
 form.addEventListener("submit", changeCity);
-tempF.addEventListener('click', displayFahrenheit);
-tempC.addEventListener('click', displayCelsium)
 
 showPosition();
