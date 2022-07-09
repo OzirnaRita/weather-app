@@ -42,9 +42,6 @@ let form = document.querySelector("form");
 let icon = document.querySelector('#icon');
 let tempC = document.querySelector('.tempC');
 let tempF = document.querySelector('.tempF');
-let temp =  15;
-let feels = 14;
-
 
 if (minutes < 10) {
     minutes = "0" + minutes;
@@ -70,8 +67,14 @@ function showGeo() {
 }
 
 function showPosition(position) {
-    let lat = position.coords.latitude;
-    let lon = position.coords.longitude;
+    let lat,lon;
+    if (position) {
+         lat = position.coords.latitude;
+         lon = position.coords.longitude;
+    }else{
+            lat = 50.4333;
+            lon = 30.5167;
+    }
     let apiWeather = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric`;
     axios.get(`${apiWeather}&appid=${apiKey}`).then(currentTemp);
 }
@@ -111,3 +114,5 @@ loc.addEventListener("click", showGeo);
 form.addEventListener("submit", changeCity);
 tempF.addEventListener('click', displayFahrenheit);
 tempC.addEventListener('click', displayCelsium)
+
+showPosition();

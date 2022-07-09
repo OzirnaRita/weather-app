@@ -50,7 +50,7 @@
             <div class="weatherToday">
                 <div class="card col-4">
                     <img 
-                        src="images/Weather/sun_with_clouds-removebg-preview.png" 
+                        src="http://openweathermap.org/img/wn/10d@2x.png"
                         class="card-img" 
                         id="icon"
                         alt="weather image" />
@@ -99,8 +99,16 @@
         <footer>
             <div class="row justify-content-between">
                 <div class="col-2">
-                    <span class="dayOfWeek">Fri</span>
-                    <span class="dayTemp">20&deg;</span>
+                    <div class="dayOfWeek">Fri</div>
+                    <img 
+                        src="http://openweathermap.org/img/wn/10d@2x.png" 
+                        alt="smallWeatherIcon"
+                        class="smallWeatherIcon">
+                    <div class="weatherForecastTemperature">
+                        <span class="weatherForecastTemperatureMax">20&deg;</span>
+                        <span class="weatherForecastTemperatureMin">20&deg;</span>
+                    </div>
+                    
                 </div>
                 <div class="col-2">
                     <span class="dayOfWeek">Sat</span>

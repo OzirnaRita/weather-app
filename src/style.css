@@ -103,7 +103,6 @@ hr {
 .chooseDate i {
     background-color: #144c60;
     width: 25px;
-    cursor: pointer;
     box-shadow: inset 3px 3px 4px 2px rgba(0, 0, 0, 0.4);
 }
 
@@ -115,7 +114,6 @@ hr {
 }
 
 .col-2 {
-    height: 50px;
     border-radius: 10px;
     background-color: #144c60;
     text-align: center;
@@ -184,7 +182,18 @@ hr {
 .tempC:hover,
 .tempF:hover {
 background-color:#1f627a;
+cursor: pointer;
 }
 .active{
     color:#fdd400;
+}
+.weatherForecastTemperatureMax,
+.weatherForecastTemperatureMin {
+    font-size: 18px;
+}
+.weatherForecastTemperatureMin {
+    opacity: 0.6;
+}
+.smallWeatherIcon{
+    width: 70px;
 }
